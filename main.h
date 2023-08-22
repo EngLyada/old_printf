@@ -29,7 +29,8 @@ struct fmt
 {
 	char fmt;
 	int (*fn)(va_list, char[], int, int, int, int);
-}
+};
+
 /**
  * typedef struct fmt fmt_t - Struct op
  *
@@ -47,7 +48,7 @@ int handle_print(const char *fmt, int *i,
 int print_char(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
 int print_string(va_list types, char buffer[],
-		int flags, int width, int precision, intsize);
+		int flags, int width, int precision, int size);
 int print_percent(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
 int print_int(va_list types, char buffer[],
